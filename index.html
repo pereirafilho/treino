@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Plano de Recomp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Plano de Recomp 💪</h1>
+        <p>Treino 6x/semana + Dieta Simplificada</p>
+    </header>
+
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#workout">Treinos</a>
+        <a href="#diet">Dieta</a>
+        <a href="#progress">Progresso</a>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo!</h2>
+        <p>Acompanhe seu plano de treino e dieta para perder gordura e ganhar músculo.</p>
+    </section>
+
+    <section id="workout">
+        <h2>📅 Divisão de Treinos</h2>
+        <div class="day" onclick="toggleExercises('day1')">
+            <h3>Dia 1: Peito</h3>
+            <div id="day1" class="exercises hidden">
+                <p>Supino reto: 4x8-10</p>
+                <p>Supino inclinado: 3x10-12</p>
+                <p>Crucifixo: 3x12</p>
+            </div>
+        </div>
+        <!-- Adicione os outros dias aqui -->
+    </section>
+
+    <section id="diet">
+        <h2>🍳 Dieta Simplificada</h2>
+        <ul>
+            <li>Café: Ovos + Aveia</li>
+            <li>Almoço: Batata + Carne + Legumes</li>
+            <li>Jantar: Frango + Vegetais</li>
+        </ul>
+    </section>
+
+    <section id="progress">
+        <h2>📊 Registro de Progresso</h2>
+        <form>
+            <input type="date" id="log-date">
+            <input type="number" placeholder="Peso (kg)" id="weight">
+            <button type="button" onclick="saveProgress()">Salvar</button>
+        </form>
+        <div id="progress-log"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
